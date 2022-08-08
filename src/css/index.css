@@ -363,6 +363,7 @@
   width: 224px;
   height: 224px;
   display: block;
+  overflow: hidden;
 }
 .music-list-title {
   margin: 14px 0 6px 0;
@@ -402,5 +403,19 @@
   height: 65px;
   background-image: url(../images/play.png);
   background-size: cover;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform ease 0.5s;
+}
+
+.music-list > li > a:hover .m-icon-play {
+  transform: scale(1);
+  opacity: 1;
+}
+.music-list > li > a > img {
+  transition: transform ease 0.5s;
+}
+.music-list > li > a:hover > img {
+  transform: scale(1.5);
 }
 /* recommmend end  */
