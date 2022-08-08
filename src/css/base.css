@@ -1,0 +1,21 @@
+/* 自定义字体 */
+/* @font-face {
+  font-family: "PingFangSCRegular";
+  src: url();
+} */
+body {
+  font: 14px/1.5 PingFangSCRegular, ArialMT, MicrosoftYahei;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
